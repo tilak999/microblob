@@ -1,5 +1,5 @@
 # Microblog
-> self-contained URL based micro-hosting.
+> Self-contained URL based micro-blog.
 
 ### How to use
 1. Visit [https://microblob.ml](microblob.ml) and compose a micro-blog.
