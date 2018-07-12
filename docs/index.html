@@ -1,1 +1,28 @@
-<h1>Hello,<br>Hit this space back after few days to find something awesome..</h1>
+<head>
+<!-- Include stylesheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+<link href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" rel="stylesheet">
+<link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Create the editor container -->
+<div class="content">
+	<div class="header pure-form">
+		<input id="title" class="pure-input-2-3" type="text" placeholder="Title"/>
+		<button class="pure-button">Preview</button>
+		<button class="pure-button">Publish</button>
+	</div>
+	<div id="editor">
+	  <p>Hello World!</p>
+	  <p>Some initial <strong>bold</strong> text</p>
+	  <p><br></p>
+	</div>
+</div>
+
+<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/script.js"></script>
+</body>

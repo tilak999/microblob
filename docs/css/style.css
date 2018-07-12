@@ -1,0 +1,60 @@
+@font-face {
+    font-family: sailec light;
+    src: url(https://cdn.quilljs.com/fonts/sailec-light.eot);
+    src: url(https://cdn.quilljs.com/fonts/sailec-light.eot?#iefix) format('embedded-opentype'),url(https://cdn.quilljs.com/fonts/sailec-light.woff2) format('woff2'),url(https://cdn.quilljs.com/fonts/sailec-light.woff) format('woff'),url(https://cdn.quilljs.com/fonts/sailec-light.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: sailec light;
+    font-weight: 700;
+    src: url(https://cdn.quilljs.com/fonts/sailec-bold.eot);
+    src: url(https://cdn.quilljs.com/fonts/sailec-bold.eot?#iefix) format('embedded-opentype'),url(https://cdn.quilljs.com/fonts/sailec-bold.woff2) format('woff2'),url(https://cdn.quilljs.com/fonts/sailec-bold.woff) format('woff'),url(https://cdn.quilljs.com/fonts/sailec-bold.ttf) format('truetype')
+}
+
+.content{
+	max-width: 800px;
+	width: 100%;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#editor{
+	flex: 1;
+	overflow-y: scroll;
+	padding: 12px 16px;
+}
+
+.ql-toolbar {
+	overflow-x: scroll;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.ql-editor {
+	padding: 0px;
+	font-family: 'sailec light';
+	font-size:16;
+	line-height: 1.6;
+}
+
+.header {
+	border: 1px solid #ccc;
+	border-bottom: none;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+}
+	#title {
+		font-size: 28px;
+		padding: 0px;
+		border: none;
+		outline: none;
+		box-shadow: none;
+		flex: 1
+	}
+
+	.header .pure-button{
+		margin-left: 5px;
+	}
