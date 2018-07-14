@@ -47,15 +47,17 @@
 	display: flex;
 	flex-direction: row;
 }
-	#title {
+	.title {
 		font-size: 28px;
+		font-family: sans-serif;
 		padding: 0px;
+		margin: 0px;
 		border: none;
 		outline: none;
 		box-shadow: none;
 		flex: 1
 	}
 
-	.header .pure-button{
-		margin-left: 5px;
-	}
+.hidden {
+	display: none;
+}

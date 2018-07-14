@@ -1,8 +1,7 @@
 <head>
-<!-- Include stylesheet -->
+<title>microblob</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-<link href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" rel="stylesheet">
 <link href="./css/style.css" rel="stylesheet">
 </head>
 
@@ -10,9 +9,10 @@
 <!-- Create the editor container -->
 <div class="content">
 	<div class="header pure-form">
-		<input id="title" class="pure-input-2-3" type="text" placeholder="Title"/>
-		<button class="pure-button">Preview</button>
-		<button class="pure-button">Publish</button>
+		<input class="title" type="text" placeholder="Title"/>
+		<p class="title hidden">Title</p>
+		<button onclick="preview(this)">Preview</button>
+		<button class="pub" onclick="publish()">Publish</button>
 	</div>
 	<div id="editor">
 	  <p>Hello World!</p>
@@ -23,6 +23,7 @@
 
 <!-- Include the Quill library -->
 <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pako/1.0.6/pako.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
