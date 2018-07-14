@@ -28,7 +28,7 @@ $(document).ready(function(){
 
 function publish() {
   var textcode = $('.ql-editor').html();
-  var zipped = pako.gzip(encodeURI(textcode));
+  var zipped = pako.deflateRaw(encodeURI(textcode));
   var zipstr = String.fromCharCode.apply(null,zipped)
   console.log(zipped);
   var blob = btoa(zipstr);
@@ -82,7 +82,7 @@ function render(data){
   var Title = decodeURI(data.split('/')[0])
   var encodedstr = atob(data.substr(data.indexOf("/")+1,data.length))
   var decodedstr = stringTointArray(encodedstr)
-  var unzippedarr = pako.ungzip(decodedstr)
+  var unzippedarr = pako.inflateRaw(decodedstr)
   var urlEncodedStr = String.fromCharCode.apply(null,unzippedarr)
   output = decodeURI(urlEncodedStr)
 
