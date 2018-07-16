@@ -2,7 +2,7 @@
 > Self-contained URL based micro-blog.
 
 ### How to use
-1. Visit [https://microblob.ml](microblob.ml) and compose a micro-blog.
+1. Visit [https://microblob.ml](https://microblob.ml) and compose a micro-blog.
 2. Preview the micro-blog using the preview button at top-right.
 3. Hit Publish and Share the URL.
 

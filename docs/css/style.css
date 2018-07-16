@@ -55,9 +55,36 @@
 		border: none;
 		outline: none;
 		box-shadow: none;
-		flex: 1
+		flex: 1;
+		width:100;
+	}
+
+	.header button {
+		background: white;
+		border: 1px #aaa solid;
+		padding: 0px 15px 0px 15px;
+		border-radius: 50px;
+		margin-left: 10px;
+		outline: none;
+	}
+
+	.menu-btn{
+		background: none;
+		border: none;
+		outline: none;
+		display: none;
 	}
 
 .hidden {
 	display: none;
+}
+
+@media only screen and (max-width: 480px) {
+	.menu-btn {
+		display: block;
+	}
+
+	.pre, .pub {
+		display: none;
+	}
 }

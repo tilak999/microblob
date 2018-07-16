@@ -54,6 +54,7 @@ function preview(el) {
     var inputTitle = $('input.title').val() || "Untitled";
     $('p.title').text(inputTitle).show();
     $('input.title').hide();
+    $('.menu-btn').hide();
   }
   else if(text == 'Edit'){
     $(el).text("Preview");
@@ -61,7 +62,8 @@ function preview(el) {
     $('.ql-editor').attr('contenteditable','true')
     var inputTitle = $('input.title').val() || "Untitled";
     $('p.title').text(inputTitle).hide();
-    $('input.title').show();
+    $('input.title').css('visibility','visible').show();
+    $('.menu-btn').show();
   }
   else{
     $(el).text("Edit");
@@ -89,4 +91,20 @@ function render(data){
   $('p.title').text(Title);
   $('#editor').addClass('ql-container ql-snow');
   $('#editor').html('<div class="ql-editor">'+output+'</div>');
+}
+
+function toggleMenu(){
+  var status = $("input.title").css("visibility");
+  if(status == 'visible')
+  {
+    $("input.title").css("visibility","hidden");
+    $(".pre").show();
+    $(".pub").show();
+  }
+  else
+  {
+    $("input.title").css("visibility","visible");
+    $(".pre").hide();
+    $(".pub").hide();
+  }
 }
