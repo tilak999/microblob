@@ -69,7 +69,8 @@ function preview(el) {
     $(el).text("Edit");
     $('.ql-toolbar').toggle();
     $('.ql-editor').attr('contenteditable','false');
-    $('p.title').show();
+    var inputTitle = $('input.title').val() || "Untitled";
+    $('p.title').text(inputTitle).show();
     $('input.title').hide();
     $('.header button').hide();
   }
@@ -107,4 +108,10 @@ function toggleMenu(){
     $(".pre").hide();
     $(".pub").hide();
   }
+}
+
+function help() {
+  var url = "https://tinyurl.com/microblob-about"
+  var win = window.open(url, '_blank');
+  win.focus();
 }
