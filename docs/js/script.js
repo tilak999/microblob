@@ -69,8 +69,6 @@ function preview(el) {
     $(el).text("Edit");
     $('.ql-toolbar').toggle();
     $('.ql-editor').attr('contenteditable','false');
-    var inputTitle = $('input.title').val() || "Untitled";
-    $('p.title').text(inputTitle).show();
     $('input.title').hide();
     $('.header button').hide();
   }
@@ -79,6 +77,7 @@ function preview(el) {
 function setHash(blob){
   var inputTitle = encodeURI($('input.title').val() || "Untitled")
   location.hash = "#" + inputTitle + "/" + blob
+  $('p.title').text(inputTitle).show();
 }
 
 function render(data){
