@@ -88,7 +88,7 @@ function render(data){
   var urlEncodedStr = String.fromCharCode.apply(null,unzippedarr)
   output = decodeURI(urlEncodedStr)
 
-  $('p.title').text(Title);
+  $('p.title').text(Title).show();
   $('#editor').addClass('ql-container ql-snow');
   $('#editor').html('<div class="ql-editor">'+output+'</div>');
 }
