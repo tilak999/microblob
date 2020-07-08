@@ -1,14 +1,14 @@
 @font-face {
     font-family: sailec light;
-    src: url(https://cdn.quilljs.com/fonts/sailec-light.eot);
-    src: url(https://cdn.quilljs.com/fonts/sailec-light.eot?#iefix) format('embedded-opentype'),url(https://cdn.quilljs.com/fonts/sailec-light.woff2) format('woff2'),url(https://cdn.quilljs.com/fonts/sailec-light.woff) format('woff'),url(https://cdn.quilljs.com/fonts/sailec-light.ttf) format('truetype')
+    src: url(fonts/sailec-light.eot);
+    src: url(fonts/sailec-light.eot?#iefix) format('embedded-opentype'),url(fonts/sailec-light.woff2) format('woff2'),url(fonts/sailec-light.woff) format('woff'),url(fonts/sailec-light.ttf) format('truetype')
 }
 
 @font-face {
     font-family: sailec light;
     font-weight: 700;
-    src: url(https://cdn.quilljs.com/fonts/sailec-bold.eot);
-    src: url(https://cdn.quilljs.com/fonts/sailec-bold.eot?#iefix) format('embedded-opentype'),url(https://cdn.quilljs.com/fonts/sailec-bold.woff2) format('woff2'),url(https://cdn.quilljs.com/fonts/sailec-bold.woff) format('woff'),url(https://cdn.quilljs.com/fonts/sailec-bold.ttf) format('truetype')
+    src: url(fonts/sailec-bold.eot);
+    src: url(fonts/sailec-bold.eot?#iefix) format('embedded-opentype'),url(fonts/sailec-bold.woff2) format('woff2'),url(fonts/sailec-bold.woff) format('woff'),url(fonts/sailec-bold.ttf) format('truetype')
 }
 
 .content{
