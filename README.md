@@ -1,4 +1,4 @@
-# Microblog
+# Microblob
 > Self-contained URL based micro-blog.
 
 ### How to use
@@ -13,4 +13,6 @@ When you publish your micro-blog, all the content of micro-blog are gzip-ed and 
 This string is then added to the hash-part of the url, so when you share the URL the data contains with-in the URl.
 
 ### License
-React is [MIT licensed](./LICENSE).
+Microblob is [MIT licensed](./LICENSE).
+
+Made with <3 and hosted on Github
