@@ -2,8 +2,7 @@ $(document).ready(function(){
   if(location.hash != '') {
     render(location.hash.substr(1))
     preview()
-  }
-  else {
+  } else {
     var toolbarOptions = [
       [{ 'header': 1}, { 'header': 2}],
       ['link'],          // dropdown with defaults from theme
@@ -30,7 +29,7 @@ function publish() {
   var textcode = $('.ql-editor').html();
   var zipped = pako.deflateRaw(encodeURI(textcode));
   var zipstr = String.fromCharCode.apply(null,zipped)
-  console.log(zipped);
+  //console.log(zipped);
   var blob = btoa(zipstr);
   setHash(blob);
   preview();
@@ -50,22 +49,22 @@ function preview(el) {
   if(text == 'Preview'){
     $(el).text("Edit");
     $('.ql-toolbar').toggle();
+    $('.pub').toggle();
     $('.ql-editor').attr('contenteditable','false');
     var inputTitle = $('input.title').val() || "Untitled";
     $('p.title').text(inputTitle).show();
     $('input.title').hide();
     $('.menu-btn').hide();
-  }
-  else if(text == 'Edit'){
+  } else if(text == 'Edit'){
     $(el).text("Preview");
     $('.ql-toolbar').toggle()
+    $('.pub').toggle();
     $('.ql-editor').attr('contenteditable','true')
     var inputTitle = $('input.title').val() || "Untitled";
     $('p.title').text(inputTitle).hide();
     $('input.title').css('visibility','visible').show();
     $('.menu-btn').show();
-  }
-  else{
+  } else {
     $(el).text("Edit");
     $('.ql-toolbar').toggle();
     $('.ql-editor').attr('contenteditable','false');
